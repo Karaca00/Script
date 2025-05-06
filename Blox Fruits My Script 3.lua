@@ -891,25 +891,25 @@ function Bossfarm()
 												if randomPos == 2 then
 													local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bossMon2:WaitForChild("HumanoidRootPart").Position).Magnitude
 													local posbsm = CFrame.new(bossMon2:WaitForChild("HumanoidRootPart").Position)
-													tweenbsmrp2 = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = posbsm * CFrame.new(50,35,0)})
+													tweenbsmrp2 = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = posbsm * CFrame.new(50,30,0)})
 													tweenbsmrp2:Play()
 												end
 												if randomPos == 3 then
 													local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bossMon2:WaitForChild("HumanoidRootPart").Position).Magnitude
 													local posbsm = CFrame.new(bossMon2:WaitForChild("HumanoidRootPart").Position)
-													tweenbsmrp3 = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = posbsm * CFrame.new(0,35,50)})
+													tweenbsmrp3 = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = posbsm * CFrame.new(0,25,50)})
 													tweenbsmrp3:Play()
 												end
 												if randomPos == 4 then
 													local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bossMon2:WaitForChild("HumanoidRootPart").Position).Magnitude
 													local posbsm = CFrame.new(bossMon2:WaitForChild("HumanoidRootPart").Position)
-													tweenbsmrp4 = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = posbsm * CFrame.new(-50,35,0)})
+													tweenbsmrp4 = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = posbsm * CFrame.new(-50,30,0)})
 													tweenbsmrp4:Play()
 												end
 												if randomPos == 5 then
 													local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bossMon2:WaitForChild("HumanoidRootPart").Position).Magnitude
 													local posbsm = CFrame.new(bossMon2:WaitForChild("HumanoidRootPart").Position)
-													tweenbsmrp5 = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = posbsm * CFrame.new(0,35,-50)})
+													tweenbsmrp5 = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = posbsm * CFrame.new(0,25,-50)})
 													tweenbsmrp5:Play()
 												end
 												bossMon2:WaitForChild("Humanoid").WalkSpeed = 0
