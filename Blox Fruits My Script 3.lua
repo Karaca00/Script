@@ -1163,7 +1163,7 @@ local bringBMon = nil
 
 function Bonefarm()
 	pcall(function()
-		while _G.Toggle_FCake == true do
+		while _G.Toggle_FBone == true do
 			wait()
 			_G.Warp = true
 			if LocalPlayer.Character:WaitForChild("Humanoid").Health >= 1 then
@@ -1181,7 +1181,7 @@ function Bonefarm()
 									repeat
 										wait(0.005)
 										if LocalPlayer.Character:FindFirstChild(_G.Weapon) then
-											if _G.Toggle_FCake == true then
+											if _G.Toggle_FBone == true then
 												if (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - boneMon:WaitForChild("HumanoidRootPart").Position).Magnitude <= 200 then
 													local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - boneMon:WaitForChild("HumanoidRootPart").Position).Magnitude
 													tweenmbfba = TweenService:Create(boneMon:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 1000, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = CFrame.new(LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position + Vector3.new(0,-30,0))})
