@@ -786,13 +786,13 @@ Auto_Farm:AddButton({
         table.clear(Bosslist)
 		SelectedBoss:SetValue()
         for i,Boss in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
-            if Boss.Name == "Stone" or Boss.Name == "Island Empress" or Boss.Name =="Kilo Admiral" or Boss.Name == "Captain Elephant" or Boss.Name == "Beautiful Pirate" or Boss.Name == "rip_indra True Form" or Boss.Name == "Longma" or Boss.Name == "Soul Reaper" or Boss.Name == "Cake Queen" or Boss.Name == "Tyrant of the Skies" or Boss.Name == "Cake Prince" then
+            if Boss.Name == "Stone" or Boss.Name == "Island Empress" or Boss.Name =="Kilo Admiral" or Boss.Name == "Captain Elephant" or Boss.Name == "Beautiful Pirate" or Boss.Name == "rip_indra True Form" or Boss.Name == "Longma" or Boss.Name == "Soul Reaper" or Boss.Name == "Cake Queen" or Boss.Name == "Tyrant of the Skies" or Boss.Name == "Cake Prince" or Boss.Name == "Hydra Leader" then
 				table.insert(Bosslist,Boss.Name)
 				SelectedBoss:SetValue(Bosslist)
 			end
         end
 		for i,Boss in pairs(game.Workspace.Enemies:GetChildren()) do
-            if Boss.Name == "Stone" or Boss.Name == "Island Empress" or Boss.Name =="Kilo Admiral" or Boss.Name == "Captain Elephant" or Boss.Name == "Beautiful Pirate" or Boss.Name == "rip_indra True Form" or Boss.Name == "Longma" or Boss.Name == "Soul Reaper" or Boss.Name == "Cake Queen" or Boss.Name == "Tyrant of the Skies" or Boss.Name == "Cake Prince" then
+            if Boss.Name == "Stone" or Boss.Name == "Island Empress" or Boss.Name =="Kilo Admiral" or Boss.Name == "Captain Elephant" or Boss.Name == "Beautiful Pirate" or Boss.Name == "rip_indra True Form" or Boss.Name == "Longma" or Boss.Name == "Soul Reaper" or Boss.Name == "Cake Queen" or Boss.Name == "Tyrant of the Skies" or Boss.Name == "Cake Prince" or Boss.Name == "Hydra Leader" then
 				table.insert(Bosslist,Boss.Name)
 				SelectedBoss:SetValue(Bosslist)
 			end
