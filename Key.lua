@@ -1,4 +1,4 @@
-{
+getgenv().KeyTarget = {
     "5mf04d9of6jlRO5GoXSgiuA2Il15QUCOLZYFZXidnHxZww6uQw",
     "Q2CdHI0lFVTg1mglSzQFVGMWyyAZtsrmQD82gItbqo5c5bgjyn",
     "cEH0ohdOQIsjEg5Z929OCTIyYQROKd1lbmJrGyB0EdAP2U6pDP",
