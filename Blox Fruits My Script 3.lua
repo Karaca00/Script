@@ -225,28 +225,28 @@ game:GetService("RunService").RenderStepped:Connect(function()
 	end
 	if Level.Value >= 1575 and Level.Value < 1600 then
 		MonN = "Dragon Crew Warrior"
-		QuestN = "AmazonQuest"
+		QuestN = "DragonCrewQuest"
 		QuestL = 1
 		QuestP = Vector3.new(6736.95361328125, 127.41805267333984, -712.388916015625)
 		MonP = Vector3.new(-236.53652954102, 217.46676635742, 6006.0883789063)
 	end
 	if Level.Value >= 1600 and Level.Value < 1625 then
 		MonN = "Dragon Crew Archer"
-		QuestN = "AmazonQuest"
+		QuestN = "DragonCrewQuest"
 		QuestL = 2
 		QuestP = Vector3.new(6736.95361328125, 127.41805267333984, -712.388916015625)
 		MonP = Vector3.new(6777.18505859375, 565.0818481445312, 275.9161071777344)
 	end
 	if Level.Value >= 1625 and Level.Value < 1650 then
 		MonN = "Hydra Enforcer"
-		QuestN = "AmazonQuest2"
+		QuestN = "VenomCrewQuest"
 		QuestL = 1
 		QuestP = Vector3.new(5213.75439453125, 1004.0855712890625, 758.6590576171875)
 		MonP = Vector3.new(4624.52392578125, 1002.2301635742188, 363.8052978515625)
 	end
 	if Level.Value >= 1650 and Level.Value < 1700 then
 		MonN = "Venomous Assailant"
-		QuestN = "AmazonQuest2"
+		QuestN = "VenomCrewQuest"
 		QuestL = 2
 		QuestP = Vector3.new(5213.75439453125, 1004.0855712890625, 758.6590576171875)
 		MonP = Vector3.new(4517.87451171875, 1218.1973876953125, 727.3696899414062)
