@@ -213,50 +213,57 @@ game:GetService("RunService").RenderStepped:Connect(function()
 		MonN = "Pirate Millionaire"
 		QuestN = "PiratePortQuest"
 		QuestL = 1
-		QuestP = Vector3.new(-289.61752319336, 43.819011688232, 5580.0903320313)
-		MonP = Vector3.new(-435.68109130859, 189.69866943359, 5551.0756835938)
+		QuestP = Vector3.new(-449.0398254394531, 108.54737091064453, 5948.88037109375)
+		MonP = Vector3.new(-515.7440795898438, 98.24565887451172, 5548.810546875)
 	end
 	if Level.Value >= 1525 and Level.Value < 1575 then
 		MonN = "Pistol Billionaire"
 		QuestN = "PiratePortQuest"
 		QuestL = 2
-		QuestP = Vector3.new(-289.61752319336, 43.819011688232, 5580.0903320313)
+		QuestP = Vector3.new(-449.0398254394531, 108.54737091064453, 5948.88037109375)
+		MonP = Vector3.new(-801.4478149414062, 100.46018981933594, 6034.72705078125)
+	end
+	if Level.Value >= 1575 and Level.Value < 1600 then
+		MonN = "Dragon Crew Warrior"
+		QuestN = "AmazonQuest"
+		QuestL = 1
+		QuestP = Vector3.new(6736.95361328125, 127.41805267333984, -712.388916015625)
 		MonP = Vector3.new(-236.53652954102, 217.46676635742, 6006.0883789063)
 	end
 	if Level.Value >= 1600 and Level.Value < 1625 then
 		MonN = "Dragon Crew Archer"
 		QuestN = "AmazonQuest"
 		QuestL = 2
-		QuestP = Vector3.new(5833.1147460938, 51.60498046875, -1103.0693359375)
-		MonP = Vector3.new(6831.1171875, 441.76708984375, 446.58615112305)
+		QuestP = Vector3.new(6736.95361328125, 127.41805267333984, -712.388916015625)
+		MonP = Vector3.new(6777.18505859375, 565.0818481445312, 275.9161071777344)
 	end
 	if Level.Value >= 1625 and Level.Value < 1650 then
-		MonN = "Female Islander"
+		MonN = "Hydra Enforcer"
 		QuestN = "AmazonQuest2"
 		QuestL = 1
-		QuestP = Vector3.new(5446.8793945313, 601.62945556641, 749.45672607422)
-		MonP = Vector3.new(5792.5166015625, 848.14392089844, 1084.1818847656)
+		QuestP = Vector3.new(5213.75439453125, 1004.0855712890625, 758.6590576171875)
+		MonP = Vector3.new(4624.52392578125, 1002.2301635742188, 363.8052978515625)
 	end
 	if Level.Value >= 1650 and Level.Value < 1700 then
-		MonN = "Giant Islander"
+		MonN = "Venomous Assailant"
 		QuestN = "AmazonQuest2"
 		QuestL = 2
-		QuestP = Vector3.new(5446.8793945313, 601.62945556641, 749.45672607422)
-		MonP = Vector3.new(5009.5068359375, 664.11071777344, -40.960144042969)
+		QuestP = Vector3.new(5213.75439453125, 1004.0855712890625, 758.6590576171875)
+		MonP = Vector3.new(4517.87451171875, 1218.1973876953125, 727.3696899414062)
 	end
 	if Level.Value >= 1700 and Level.Value < 1725 then
 		MonN = "Marine Commodore"
 		QuestN = "MarineTreeIsland"
 		QuestL = 1
-		QuestP = Vector3.new(2179.98828125, 28.731239318848, -6740.0551757813)
-		MonP = Vector3.new(2198.0063476563, 128.71075439453, -7109.5043945313)
+		QuestP = Vector3.new(2483.640380859375, 74.21196746826172, -6787.37353515625)
+		MonP = Vector3.new(2529.356201171875, 109.61693572998047, -7624.85595703125)
 	end
 	if Level.Value >= 1725 and Level.Value < 1775 then
 		MonN = "Marine Rear Admiral"
 		QuestN = "MarineTreeIsland"
 		QuestL = 2
-		QuestP = Vector3.new(2179.98828125, 28.731239318848, -6740.0551757813)
-		MonP = Vector3.new(3294.3142089844, 385.41125488281, -7048.6342773438)
+		QuestP = Vector3.new(2483.640380859375, 74.21196746826172, -6787.37353515625)
+		MonP = Vector3.new(3722.721923828125, 169.43128967285156, -7037.87158203125)
 	end
 	if Level.Value >= 1775 and Level.Value < 1800 then
 		MonN = "Fishman Raider"
@@ -416,15 +423,15 @@ game:GetService("RunService").RenderStepped:Connect(function()
 		MonN = "Candy Pirate"
 		QuestN = "CandyQuest1"
 		QuestL = 1
-		QuestP = Vector3.new(-1149.328, 60.13536834716797, -14445.6143)
-		MonP = Vector3.new(-1437.56348, 17.1481285, -14385.6934)
+		QuestP = Vector3.new(-1164.3568115234375, 60.13536834716797, -14490.1162109375)
+		MonP = Vector3.new(-1278.1942138671875, 84.21562957763672, -14523.63671875)
 	end
 	if Level.Value >= 2425 and Level.Value < 2450 then
 		MonN = "Snow Demon"
 		QuestN = "CandyQuest1"
 		QuestL = 2
-		QuestP = Vector3.new(-1149.328, 60.13536834716797, -14445.6143)
-		MonP = Vector3.new(-916.222656, 17.1481285, -14638.8125)
+		QuestP = Vector3.new(-1164.3568115234375, 60.13536834716797, -14490.1162109375)
+		MonP = Vector3.new(-902.465576171875, 89.04500579833984, -14666.3486328125)
 	end
 	if Level.Value >= 2450 and Level.Value < 2475 then
 		MonN = "Isle Outlaw"
