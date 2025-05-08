@@ -544,7 +544,7 @@ function farm()
 														elseif _G.Bring == false then
 															local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bringFMon:WaitForChild("HumanoidRootPart").Position).Magnitude
 															local pos = CFrame.new(bringFMon:WaitForChild("HumanoidRootPart").Position)
-															tweenfnb = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = pos * CFrame.new(0,50,0)})
+															tweenfnb = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = pos * CFrame.new(0,30,0)})
 															tweenfnb:Play()
 														end
 													end
