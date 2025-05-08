@@ -164,6 +164,7 @@ _G.Toggle_Farm = nil
 _G.Toggle_Equip = nil
 _G.Equip_Tool = nil
 _G.Warp = false
+_G.Bring = nil
 local RegisterAttack = game:GetService("ReplicatedStorage").Modules.Net:WaitForChild("RE/RegisterAttack")
 local RegisterHit = game:GetService("ReplicatedStorage").Modules.Net:WaitForChild("RE/RegisterHit")
 
@@ -394,6 +395,15 @@ autobuso:OnChanged(function(Toggle)
     _G.Toggle_Buso = Toggle
 end)
 
+local bringmon = farms:AddToggle("bring",{
+	Title = "Auto Bring Mob",
+	Default = true
+})
+
+bringmon:OnChanged(function(Toggle)
+	_G.Bring = Toggle
+end)
+
 RunService.RenderStepped:Connect(function()
 	wait(0.005)
     if _G.Toggle_Buso == true then
@@ -508,7 +518,7 @@ function farm()
 														elseif _G.Bring == false then
 															local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bringFMon:WaitForChild("HumanoidRootPart").Position).Magnitude
 															local pos = CFrame.new(bringFMon:WaitForChild("HumanoidRootPart").Position)
-															tweenfnb = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = pos * CFrame.new(0,50,0)})
+															tweenfnb = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = pos * CFrame.new(0,30,0)})
 															tweenfnb:Play()
 														end
 													end
