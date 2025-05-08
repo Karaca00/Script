@@ -228,7 +228,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
 		QuestN = "DragonCrewQuest"
 		QuestL = 1
 		QuestP = Vector3.new(6736.95361328125, 127.41805267333984, -712.388916015625)
-		MonP = Vector3.new(-236.53652954102, 217.46676635742, 6006.0883789063)
+		MonP = Vector3.new(6782.732421875, 112.94754028320312, -804.3106079101562)
 	end
 	if Level.Value >= 1600 and Level.Value < 1625 then
 		MonN = "Dragon Crew Archer"
