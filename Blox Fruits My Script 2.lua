@@ -483,26 +483,33 @@ function farm()
 												wait(0.005)
 												if LocalPlayer.Character:FindFirstChild(_G.Weapon) then
 													if _G.Toggle_Farm == true then
-														if (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - fMon:WaitForChild("HumanoidRootPart").Position).Magnitude <= 200 then
-															local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - fMon:WaitForChild("HumanoidRootPart").Position).Magnitude
-															tweenbfs = TweenService:Create(fMon:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 1000, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = CFrame.new(LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position + Vector3.new(0,-30,0))})
-															tweenbfs:Play()
-															fMon:WaitForChild("Humanoid").WalkSpeed = 0
-															fMon:WaitForChild("Humanoid").Sit = true
-															sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
-														end
-														for i,s in pairs(game.Workspace.Enemies:GetChildren()) do
-															bringFMon = s
-															if (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bringFMon:WaitForChild("HumanoidRootPart").Position).Magnitude <= 200 and bringFMon ~= fMon and bringFMon ~= nil then
-																if bringFMon.Name == fMon.Name then
-																	local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bringFMon:WaitForChild("HumanoidRootPart").Position).Magnitude
-																	tweenbf = TweenService:Create(bringFMon:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 1000, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = CFrame.new(LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position + Vector3.new(0,-30,0))})
-																	tweenbf:Play()
-																	bringFMon:WaitForChild("Humanoid").WalkSpeed = 0
-																	bringFMon:WaitForChild("Humanoid").Sit = true
-																	sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
+														if _G.Bring == true then
+															if (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - fMon:WaitForChild("HumanoidRootPart").Position).Magnitude <= 200 then
+																local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - fMon:WaitForChild("HumanoidRootPart").Position).Magnitude
+																tweenbfs = TweenService:Create(fMon:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 1000, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = CFrame.new(LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position + Vector3.new(0,-30,0))})
+																tweenbfs:Play()
+																fMon:WaitForChild("Humanoid").WalkSpeed = 0
+																fMon:WaitForChild("Humanoid").Sit = true
+																sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
+															end
+															for i,s in pairs(game.Workspace.Enemies:GetChildren()) do
+																bringFMon = s
+																if (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bringFMon:WaitForChild("HumanoidRootPart").Position).Magnitude <= 200 and bringFMon ~= fMon and bringFMon ~= nil then
+																	if bringFMon.Name == fMon.Name then
+																		local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bringFMon:WaitForChild("HumanoidRootPart").Position).Magnitude
+																		tweenbf = TweenService:Create(bringFMon:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 1000, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = CFrame.new(LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position + Vector3.new(0,-30,0))})
+																		tweenbf:Play()
+																		bringFMon:WaitForChild("Humanoid").WalkSpeed = 0
+																		bringFMon:WaitForChild("Humanoid").Sit = true
+																		sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
+																	end
 																end
 															end
+														elseif _G.Bring == false then
+															local distance = (LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position - bringFMon:WaitForChild("HumanoidRootPart").Position).Magnitude
+															local pos = CFrame.new(bringFMon:WaitForChild("HumanoidRootPart").Position)
+															tweenfnb = TweenService:Create(LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(distance / 500, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0), {CFrame = pos * CFrame.new(0,50,0)})
+															tweenfnb:Play()
 														end
 													end
 												elseif not LocalPlayer.Character:FindFirstChild(_G.Weapon) and _G.Toggle_Equip == true then
@@ -594,6 +601,9 @@ autofarm:OnChanged(function(Toggle)
         end
 		if tweennml then
             tweennml:Cancel()
+        end
+		if tweenfnb then
+            tweenfnb:Cancel()
         end
     end
 end)
